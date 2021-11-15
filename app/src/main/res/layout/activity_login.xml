@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login"
+    android:orientation="vertical"
+    android:background="?colorPrimary">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:src="@drawable/restaurant_logo_no_text"
+            app:tint="?colorOnPrimary"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Resto Hub\nSign In"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="?colorOnPrimary"
+            android:layout_gravity="center_vertical" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/background_rounded_topleft"
+        android:elevation="2dp"
+        android:layout_marginHorizontal="12dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginHorizontal="20dp">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                android:hint="Email"
+                app:startIconDrawable="@drawable/ic_baseline_email_24"
+                app:startIconTint="@color/color_selector_primary_or_basic"
+                app:boxStrokeColor="?colorPrimary"
+                app:boxCornerRadiusBottomEnd="16dp"
+                app:boxCornerRadiusBottomStart="16dp"
+                app:boxCornerRadiusTopEnd="16dp"
+                app:boxCornerRadiusTopStart="16dp"
+                android:layout_marginTop="20dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:inputType="textEmailAddress"
+                    android:maxLines="1"
+                    android:maxLength="50" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                android:hint="Password"
+                app:startIconDrawable="@drawable/ic_baseline_lock_24"
+                app:startIconTint="@color/color_selector_primary_or_basic"
+                app:passwordToggleEnabled="true"
+                app:passwordToggleTint="@color/color_selector_primary_or_basic"
+                app:boxStrokeColor="?colorPrimary"
+                app:boxCornerRadiusBottomEnd="16dp"
+                app:boxCornerRadiusBottomStart="16dp"
+                app:boxCornerRadiusTopEnd="16dp"
+                app:boxCornerRadiusTopStart="16dp"
+                android:layout_marginTop="12dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:inputType="textPassword"
+                    android:maxLines="1"
+                    android:maxLength="20" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Forget password?"
+                android:textSize="14sp"
+                android:textColor="?colorSecondaryVariant"
+                android:textStyle="bold"
+                android:padding="4dp"
+                android:foreground="?selectableItemBackground"
+                android:clickable="true"
+                android:layout_gravity="right"
+                android:layout_marginTop="8dp"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Login"
+                app:cornerRadius="16dp"
+                android:paddingVertical="16dp"
+                android:layout_marginTop="12dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Create Account"
+                android:textSize="14sp"
+                android:textColor="?colorSecondaryVariant"
+                android:textStyle="bold"
+                android:clickable="true"
+                android:foreground="?selectableItemBackground"
+                android:layout_gravity="center_horizontal"
+                android:padding="4dp"
+                android:layout_marginTop="4dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="20dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/gray_line" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="other method"
+                    android:textSize="14sp"
+                    android:textColor="?colorOnSecondary"
+                    android:layout_marginHorizontal="12dp"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/gray_line" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="20dp">
+
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Guest"
+                    android:textAllCaps="false"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    app:strokeColor="?colorPrimary"
+                    app:cornerRadius="16dp"
+                    android:layout_marginRight="8dp"
+                    android:paddingVertical="16dp"/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Google"
+                    android:textAllCaps="false"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    app:strokeColor="?colorPrimary"
+                    app:cornerRadius="16dp"
+                    android:layout_marginLeft="8dp"
+                    android:paddingVertical="16dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
