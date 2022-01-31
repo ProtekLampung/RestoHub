@@ -1,4 +1,4 @@
-package com.protek.restohub.Fragments;
+package com.softlaboratory.restohub.Fragments;
 
 import android.os.Bundle;
 
@@ -8,7 +8,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.protek.restohub.R;
+import com.softlaboratory.restohub.R;
 
 /**
  * A simple {@link Fragment} subclass.

@@ -1,4 +1,4 @@
-package com.protek.restohub;
+package com.softlaboratory.restohub;
 
 import org.junit.Test;
 

@@ -7,7 +7,7 @@
 <!--    </item>-->
 
     <item>
-        <color android:color="@color/purple_500" />
+        <color android:color="@color/primary" />
     </item>
 
     <item

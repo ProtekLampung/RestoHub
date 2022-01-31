@@ -1,4 +1,4 @@
-package com.protek.restohub;
+package com.softlaboratory.restohub;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -12,7 +12,7 @@ public class Splash extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        Intent intent = new Intent(Splash.this, Register.class);
+        Intent intent = new Intent(Splash.this, Login.class);
         startActivity(intent);
 
     }
