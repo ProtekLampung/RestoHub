@@ -1,4 +1,4 @@
-package com.softlaboratory.restohub.Fragments;
+package com.softlaboratory.restohub.fragment;
 
 import android.os.Bundle;
 

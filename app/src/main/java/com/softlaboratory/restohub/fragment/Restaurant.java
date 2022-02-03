@@ -1,23 +1,21 @@
-package com.softlaboratory.restohub.Fragments;
+package com.softlaboratory.restohub.fragment;
 
 import android.os.Bundle;
-
 import androidx.fragment.app.Fragment;
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-
 import com.softlaboratory.restohub.R;
 
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link Home} factory method to
+ * Use the {@link Restaurant} factory method to
  * create an instance of this fragment.
+ *
  */
-public class Home extends Fragment {
+public class Restaurant extends Fragment {
 
-    public Home() {
+    public Restaurant() {
         // Required empty public constructor
     }
 
@@ -26,9 +24,8 @@ public class Home extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View rootView = inflater.inflate(R.layout.fragment_home, container, false);
+        View rootView = inflater.inflate(R.layout.fragment_restaurant, container, false);
         //TO DO:
-
 
         return rootView;
     }

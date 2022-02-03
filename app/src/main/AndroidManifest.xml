@@ -10,13 +10,19 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Restaurant">
         <activity
-            android:name="com.softlaboratory.restohub.Register"
+            android:name=".Chat"
             android:exported="false" />
         <activity
-            android:name="com.softlaboratory.restohub.Login"
+            android:name=".ChatRoom"
             android:exported="false" />
         <activity
-            android:name="com.softlaboratory.restohub.Splash"
+            android:name=".Register"
+            android:exported="false" />
+        <activity
+            android:name=".Login"
+            android:exported="false" />
+        <activity
+            android:name=".Splash"
             android:exported="true"
             android:theme="@style/SplashTheme">
             <intent-filter>
@@ -26,7 +32,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.softlaboratory.restohub.MainActivity"
+            android:name=".MainActivity"
             android:exported="false" />
     </application>
 
